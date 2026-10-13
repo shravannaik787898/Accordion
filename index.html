@@ -1,0 +1,31 @@
+<style>
+    .acc-item { max-width: 500px; margin: auto; font-family: Arial; }
+    .acc-header { background: #eee; padding: 10px; width: 100%; border: none; text-align: left; cursor: pointer; margin-top: 5px; }
+    .acc-body { display: none; padding: 10px; background: #fff; border-left: 2px solid #007BFF; }
+</style>
+
+<div class="acc-item">
+    <h3>Digital Marketing FAQ</h3>
+    
+    <button class="acc-header" onclick="toggleAcc(this)">1. What is Digital Marketing?</button>
+    <div class="acc-body"><p>It is the promotion of brands via digital channels and the internet.</p></div>
+
+    <button class="acc-header" onclick="toggleAcc(this)">2. Why is SEO important?</button>
+    <div class="acc-body"><p>SEO improves website visibility and drives organic traffic from search engines.</p></div>
+
+    <button class="acc-header" onclick="toggleAcc(this)">3. What is Social Media Marketing (SMM)?</button>
+    <div class="acc-body"><p>SMM leverages social platforms to build brand awareness and customer loyalty.</p></div>
+
+    <button class="acc-header" onclick="toggleAcc(this)">4. How does Brand Management help?</button>
+    <div class="acc-body"><p>It maintains a positive public image and builds long-term customer trust.</p></div>
+
+    <button class="acc-header" onclick="toggleAcc(this)">5. How fast do results appear?</button>
+    <div class="acc-body"><p>Paid campaigns offer instant results, whereas organic strategies like SEO take a few months.</p></div>
+</div>
+
+<script>
+function toggleAcc(btn) {
+    let body = btn.nextElementSibling;
+    body.style.display = (body.style.display === "block") ? "none" : "block";
+}
+</script>
